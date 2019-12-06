@@ -3,7 +3,7 @@
 from monster_inc_staff import *
 from monster_inc_student import *
 from monster_inc_workshop import *
-
+from monster_inc_lecture_theatre import *
 
 ## T.0 Testing setup
 university = Uni('Monster Inc University')  # Uni class
@@ -12,6 +12,9 @@ monster_2 = Staff(university.uni_name, 'Prof. Mike', ['bounce', 'shout', 'clap']
 monster_3 = Student(university.uni_name, 'Stud. Jay', ['sing', 'shave', 'dance'], 'S0007', 'A+')   # Student class
 monster_4 = Student(university.uni_name, 'Stud. Venice', ['roll', 'sleep', 'spit'], 'S0008', 'B-')   # Student class
 workshop_1 = Workshop(university.uni_name, 'Scare 101')
+building_1 = Building(university.uni_name, 'Mushy Swamp Building')
+lecture_theatre_1 = Lecture_theatre(university.uni_name, building_1.building_name, 'Swamp Theatre')
+
 
 ### T.1) uni name
 print('T.1) Test if Uni class attribute name is equal to: Monster Inc Unversity')
@@ -74,3 +77,8 @@ workshop_1.add_staff(monster_2.staff_id)
 print('    Result: ', workshop_1.enrollment_staff == ['STAFF0001'], '   Output: ',
       workshop_1.enrollment_staff)
 
+### T.5.4) Workshop class behavior add a theatre
+print('\nT.5.) Test if workshop class behavior add theatre is equal to: [Swamp Theatre]')
+workshop_1.add_lecture_theatre(lecture_theatre_1.lecture_theatre_name)
+print('    Result: ', workshop_1.lecture_theatre == ['Swamp Theatre'], '   Output: ',
+      workshop_1.lecture_theatre)

@@ -1,5 +1,6 @@
 # Inherits from Uni()
 from monster_inc_uni import *
+from monster_inc_lecture_theatre import *
 
 class Workshop(Uni):
     # define attributes
@@ -8,6 +9,7 @@ class Workshop(Uni):
         self.subject = subject
         self.enrollment_student = []
         self.enrollment_staff = []
+        self.lecture_theatre = []
     pass
 
     # define behaviors
@@ -18,4 +20,8 @@ class Workshop(Uni):
     ## method to add staff in ids on a workshop
     def add_staff(self, enrol_staff):
         self.enrollment_staff.append(enrol_staff)
+
+    ## method to add lecture theatre on a workshop
+    def add_lecture_theatre(self, lecture_theatre):
+        self.lecture_theatre.append(lecture_theatre)
 

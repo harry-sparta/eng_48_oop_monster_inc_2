@@ -14,9 +14,8 @@ also encapsulate certain things
 ### Class structure
 - Uni(), Monster()
     - Staff()
+    - Student()
 - Uni()
-    - Campus()
+    - Building()
         - lecture_theatre
     - Workshop()
-- Monster()
-    - Student()
