@@ -8,3 +8,15 @@ As a Uni Admin, I want to be able to:
 - list all spooky workshops, so that I can inform students on workshops
 - add a student to a spooky workshop, so that the workshop has students
 - see a student's grade, so that I can inform them their grade
+
+also encapsulate certain things
+
+### Class structure
+- Uni(), Monster()
+    - Staff()
+- Uni()
+    - Campus()
+        - lecture_theatre
+    - Workshop()
+- Monster()
+    - Student()
