@@ -9,4 +9,3 @@ class Monster():
     # Define behaviors
     def add_skills(self, new_skills):
         self.monster_skills.append(new_skills)
-
